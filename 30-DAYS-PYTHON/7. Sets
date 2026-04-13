@@ -1,0 +1,55 @@
+"""Set is a collection of items. Let me take you back to your elementary or high school
+Mathematics lesson. The Mathematics definition of a set can be applied also
+in Python. Set is a collection of unordered and un-indexed distinct elements.
+In Python set is used to store unique items, and it is possible to find the union,
+intersection, difference, symmetric difference, subset, super set and disjoint set among sets."""
+
+# EMPTY SET
+st = set()
+
+# SET WITH INITIAL ITEMS
+st = {'item1', 'item2', 'item3'}
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+
+# LENGTH OF A SET
+st = {'item1', 'item2', 'item3', 'item4'}
+len(st)
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+len(fruits)
+
+# ACCESSING ITEMS IN A SET
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+print('mango' in fruits)
+
+# ADDING ITEMS TO A SET
+# once a set is created we cannot change any items and we can also add additional items.
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.add('lime')
+
+# ADDING MULTIPLE ITEMS IN SET
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.update(['apply', 'pineapple', 'watermelon'])
+print(fruits)
+
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'tomato', 'potato', 'cabbage', 'onion', 'carrot'}
+fruits.update(vegetables)
+print(fruits)
+
+# REMOVING ITEMS FROM A SET
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+removed_item = fruits.pop()
+print(fruits)
+print(removed_item)
+
+# CLEARING ITEMS IN A SET
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+fruits.clear()
+print(fruits)
+
+
+
+
