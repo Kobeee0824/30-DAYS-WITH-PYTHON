@@ -50,6 +50,100 @@ fruits = {'banana', 'orange', 'mango', 'lemon'}
 fruits.clear()
 print(fruits)
 
+# DELETING A SET
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+del fruits
+
+# CONVERTING LIST TO SET
+fruits = ['banana', 'orange', 'mango', 'lemon']
+fruits = set(fruits) # {'mango', 'lemon', 'banana', 'orange'}
+print(fruits)
+
+# JOINING SETS
+fruits = {'banana', 'orange', 'mango', 'lemon'}
+vegetables = {'tomato', 'potato', 'cabbage', 'onion', 'carrot'}
+print(fruits.union(vegetables)) # {'onion', 'carrot', 'banana', 'mango', 'tomato', 'lemon', 'orange', 'potato', 'cabbage'}
+
+# FINDING INTERSECTION ITEMS -  returns a set of items which are in both the sets or using & symbol.
+st1 = {'item1', 'item2', 'item3'}
+st2 = {'item3', 'item2'}
+st1.intersection(st2)
+
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6 ,8 ,10}
+whole_numbers.intersection(even_numbers) # {0, 2, 4, 8, 10}
+
+# CHECKING SUBSET AND SUPER SET
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6 ,8 ,10}
+whole_numbers.issubset(even_numbers)
+whole_numbers.issuperset(even_numbers)
+
+# CHECKING THE DIFFERENCE BETWEEN TWO SETS - returns the difference between two sets or using - symbol .
+whole_numbers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+even_numbers = {0, 2, 4, 6, 8, 10}
+whole_numbers.difference(even_numbers) # {1, 3, 5, 7, 9}
+
+python = {'p', 'y', 't', 'o','n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.difference(dragon)     # {'p', 'y', 't'}  - the result is unordered (characteristic of sets)
+# python - dragon
+dragon.difference(python)     # {'d', 'r', 'a', 'g'}
+# dragon - python
+
+# FINDING SYMMETRIC DIFFERENCE BETWEEN TWO SETS - irereturn yung lahat ng mga items except yung parehas meron yung both sets
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.symmetric_difference(dragon) # {'r', 't', 'p', 'y', 'g', 'a', 'd', 'h'}
+
+# JOINING SETS - magcheck if walang common items sa both sets (disjoint sets).
+even_numbers = {0, 2, 4 ,6, 8}
+odd_numbers = {1, 3, 5, 7, 9}
+even_numbers.isdisjoint(odd_numbers) # True, because no common item
+
+python = {'p', 'y', 't', 'h', 'o', 'n'}
+dragon = {'d', 'r', 'a', 'g', 'o','n'}
+python.isdisjoint(dragon) # False, there are common items {'o', 'n'}
+
+print("====================== EXERCISE ======================")
+
+# ====================== EXERCISE ======================
+fg = {'raf', 'ian', 'leizl', 'abi'}
+print(len(fg))
+fg.add('Twitter')
+print(fg)
+fg.update(['charles', 'nica', 'meg', 'kiele'])
+print(fg)
+fg.pop()
+print(fg)
+
+remove = {'r', 'e', 'm', 'o', 'v', 'e'}
+discard = {'d', 'i', 's', 'c', 'a', 'r', 'd'}
+remove.difference(discard)
+print(remove)
+
+A = {1, 2, 3, 4, 5}
+B = {6, 7, 8, 9, 10}
+print(A.isdisjoint(B))
+
+print(A.intersection(B))
+
+print(A.issubset(B))
+
+print(A.isdisjoint(B))
+
+print(A.union(B))
+
+print(A.symmetric_difference(B))
+
+del A
+del B
+
+
+
+
+
+
 
 
 
