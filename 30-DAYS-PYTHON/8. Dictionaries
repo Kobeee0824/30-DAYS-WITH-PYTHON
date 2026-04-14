@@ -1,0 +1,154 @@
+# syntax
+empty_dict = {}
+# Dictionary with data values
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_married':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+print(len(person)) # 7
+
+# ACCESSING DICTIONARY ITEMS
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print(dct['key1'])
+print(dct['key4'])
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+print(person['first_name']) # Asabeneh
+print(person['country'])    # Finland
+print(person['skills'])     # ['JavaScript', 'React', 'Node', 'MongoDB', 'Python']
+
+"""Accessing an item by key name raises an error if the key does not exist. 
+To avoid this error first we have to check if a key exist or we can use the get method.
+The get method returns None, which is a NoneType object data type, if the key does not exist.
+"""
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+    }
+
+print(person.get('first_name')) # Asabeneh
+print(person.get('country')) # Finland
+print(person.get('skills')) #['JavaScript', 'React', 'Node', 'MongoDB', 'Python']
+print(person.get('city'))   # None
+
+# ADDING ITEMS TO A DICTIONARY
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct['key5'] = 'value5'
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+        }
+}
+
+person['job_title'] = 'Instructor'
+person['skills'].append('HTML')
+print(person)
+
+# MODIFYING ITEMS IN A DICTIONARY
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct['key1'] = 'value-one'
+
+# CHECKING KEYS IN A DICTIONARY - use 'in' operator to check if a key exist in a key dictionary
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print('key2' in dct)
+print('key5' in dct)
+
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct.pop('key1') # removes key1 item
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+dct.popitem() # removes the last item
+del dct['key2'] # removes key2 item
+
+# CHANGING DICTIONARY TO A LIST OF ITEMS
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+print(dct.items()) # dict_items([('key1', 'value1'), ('key2', 'value2'), ('key3', 'value3'), ('key4', 'value4')])
+
+# CLEARING A DICTIONARY
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+del dct
+
+# COPY A DICTIONARY
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+dct_copy = dct.copy() # {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
+
+# GETTING DICTIONARY KEYS AS A LIST - gives us all the keys of a a dictionary as a list.
+dct = {'key':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+keys = dct.keys()
+print(keys)
+
+# GETTING DICTIONARY VALUES AS A LIST
+dct = {'key1':'value1', 'key2':'value2', 'key3':'value3', 'key4':'value4'}
+values = dct.values()
+print(values)
+
+print("====================== EXERCISE ======================")
+dog = {}
+dog = {'name':'tasha', 'breed':'beagle', 'legs':'4', 'age':3}
+student = {'first_name':'kiele', 'last_name':'hernandez', 'gender':'male','age':23, 'marital status':'single', 'skills':['programming', 'playing sports'], 'country':'philippines', 'city':'paranaque', 'address':'don galo'}
+print(len(student))
+
+print(student['first_name'])
+print(student['skills'][1])
+student['skills'][0] = 'coding'
+print(student['skills'][0])
+
+keys = student.keys()
+print(keys)
+
+values = student.values()
+print(values)
+
+print(student.items())
+
+student.pop('age')
+print(student)
+
+del student['marital status']
+
+print(student.clear())
+
+
+
+
+
+
+
+
