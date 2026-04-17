@@ -179,7 +179,196 @@ elif my_age == your_age:
 else:
     diff_years = your_age - my_age
     print(f'You are {diff_years} years older than me')
+
+
+"""# CONDITIONAL - a block of one or more statements will be executed if a certain expression is true
+
+# IF CONDITION
+a = 3
+if a > 0:
+    print('A is a positive number')
     
+#IF ELSE
+a = 3
+if a < 0:
+    print('A is a negative number')
+else:
+    print('A is a positive number')
+    
+# IF ELIF ELSE
+a = 0
+if a > 0:
+    print('A is a positive number')
+elif a < 0:
+    print('A is a negative number')
+else: 
+    print('A is zero')
+    
+# SHORT HAND
+a = 3
+print('A is positive') if a > 0 else print('A is negative') # first condition met, 'A is positive' will be printed
+
+# NESTED CONDITIONS
+if condition:
+    code
+    if condition:
+        code
+        
+        
+a = 0
+if a > 0:
+    if a % 2 == 0:
+        print('A is a positive and even integer')
+    else:
+        print('A is a positive number')
+elif a == 0:
+    print('A is zero')
+else:
+    print('A is a negative number')
+# We can avoid writing nested condition by using logical operator 'and'
+
+# IF CONDITION AND LOGICAL OPERATOR
+a = 0
+if a > 0 and a % 2 == 0:
+    print('A is an even and positive integer')
+elif a > 0 and a % 2 != 0:
+    print('A is a positive integer')
+elif a == 0:
+    print('A is zero')
+else: 
+    print('A is negative')
+    
+# IF' and 'OR LOGICAL OPERATORS
+user = 'James'
+access_level = 3
+if user == 'admin' or access_level >= 4:
+    print('Access granted!')
+else:
+    print('Access denied!')
+    
+    
+print('===================== EXERCISE =====================')
+age = int(input('Enter your age: '))
+if age >= 18:
+    print('You are old enough to drive')
+else:
+    req_years = 18 - age
+    print(f'You need {req_years} more years to learn to drive')
+    
+    
+my_age = 0
+your_age = 0
+diff_years = 0
+
+my_age = int(input('Enter my age: '))
+your_age = int(input('Enter your age: '))
+
+if my_age > your_age:
+    diff_years = my_age - your_age
+    print(f'I am {diff_years} years older than you')
+elif my_age == your_age:
+    print('We have the same age!')
+else:
+    diff_years = your_age - my_age
+    print(f'You are {diff_years} years older than me')
+    
+# CONDITIONAL - a block of one or more statements will be executed if a certain expression is true
+
+# IF CONDITION
+a = 3
+if a > 0:
+    print('A is a positive number')
+    
+#IF ELSE
+a = 3
+if a < 0:
+    print('A is a negative number')
+else:
+    print('A is a positive number')
+    
+# IF ELIF ELSE
+a = 0
+if a > 0:
+    print('A is a positive number')
+elif a < 0:
+    print('A is a negative number')
+else: 
+    print('A is zero')
+    
+# SHORT HAND
+a = 3
+print('A is positive') if a > 0 else print('A is negative') # first condition met, 'A is positive' will be printed
+
+# NESTED CONDITIONS
+if condition:
+    code
+    if condition:
+        code
+        
+        
+a = 0
+if a > 0:
+    if a % 2 == 0:
+        print('A is a positive and even integer')
+    else:
+        print('A is a positive number')
+elif a == 0:
+    print('A is zero')
+else:
+    print('A is a negative number')
+# We can avoid writing nested condition by using logical operator 'and'
+
+# IF CONDITION AND LOGICAL OPERATOR
+a = 0
+if a > 0 and a % 2 == 0:
+    print('A is an even and positive integer')
+elif a > 0 and a % 2 != 0:
+    print('A is a positive integer')
+elif a == 0:
+    print('A is zero')
+else: 
+    print('A is negative')
+    
+# IF' and 'OR LOGICAL OPERATORS
+user = 'James'
+access_level = 3
+if user == 'admin' or access_level >= 4:
+    print('Access granted!')
+else:
+    print('Access denied!')
+    
+    
+print('===================== EXERCISE =====================')
+age = int(input('Enter your age: '))
+if age >= 18:
+    print('You are old enough to drive')
+else:
+    req_years = 18 - age
+    print(f'You need {req_years} more years to learn to drive')
+    
+    
+my_age = 0
+your_age = 0
+diff_years = 0
+
+my_age = int(input('Enter my age: '))
+your_age = int(input('Enter your age: '))
+
+if my_age > your_age:
+    diff_years = my_age - your_age
+    print(f'I am {diff_years} years older than you')
+elif my_age == your_age:
+    print('We have the same age!')
+else:
+    diff_years = your_age - my_age
+    print(f'You are {diff_years} years older than me')
+    
+
+
+
+
+
+"""
 
 
 
